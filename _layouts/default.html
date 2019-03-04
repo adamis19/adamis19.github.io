@@ -8,10 +8,11 @@
 		<body>
 			<nav>
 	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
+	        		<li><a onmouseover="bigImg(this)" onmouseout="normalImg(this)" href="/">Domov</a></li>
+		        	<li><a href="/about">O mne</a></li>
+	        		<li><a href="/projekty">Projekty</a></li>
+	        		<li><a href="/blog">Hobby</a></li>
+					<li><a href="/blog">Blog</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
@@ -25,5 +26,16 @@
 	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
 				</ul>
 			</footer>
+			<script>
+			function bigImg(x) {
+			  x.style.height = "64px";
+			  x.style.width = "64px";
+			}
+
+			function normalImg(x) {
+			  x.style.height = "32px";
+			  x.style.width = "32px";
+			}
+</script>
 		</body>
 	</html>
