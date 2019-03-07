@@ -1,9 +1,27 @@
----
-layout: default
----
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body style="background-color:#4d4d00;">
+			<nav>
+	    		<ul>
+	        		<li><a class="upmenu" href="/blog" name="ponuka">Späť na zoznam blogov</a></li>
+	    		</ul>
+			</nav>
+			<h1>{{ page.title }}</h1>
+				<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-  {{ content }}
-</div>
+				<div class="post">
+				  {{ content }}
+				</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
