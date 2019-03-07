@@ -2,8 +2,22 @@
 layout: default
 title: projekty - Adam Fábry
 ---
+
 <div class="blurb">
 	<h2>Tu sa nachádza prehľad mojich najzaujímavejších školských projektov.</h2>
+	
+{% for projekt in site.data.projekty %}
+  <li>
+    <p> 
+      {{ projekt.meno }}
+	  {{ projekt.rocnik }}
+	  {{ projekt.predmet }}
+	  {{ projekt.znamka }}
+	  {{ projekt.cviciaci }}
+    </p>
+  </li>
+{% endfor %}
+
 	<p><b> Bomberman: </b></p>
 	<p1> Túto všetobecne známu hru som vytvoril na predmete Princípy počítačovej grafiky a spracovanie obrazu. Bomberman sa pohybuje pomocou šípok,
 	medzerníkom hádže bomby, ak ho výbuch zasiahne zomrel. Ak výbuch zasiahne drevenú debnu, debna sa rozpadne a políčko je priechodné. Cieľom je dostať
