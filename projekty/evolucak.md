@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Evolucak"
+title: "Evolučný algoruitmus"
 ---
 
 Tento projekt som robil na predmet Umelá inteligencia. Algoritmus poklady znázornené na obrázku zozbiera najoptimálnejším spôsobom.
