@@ -1,27 +1,32 @@
-<!DOCTYPE html>
-	<html>
+---
+layout: default
+title: Adam Fábry
+---
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
 		<body style="background-color:#4d4d00;">
+			{% if page.path contains 'projekty' %}
+			<nav>
+	    		<ul>
+	        		<li><a class="upmenu" href="/projekty" name="ponuka">Späť na zoznam projektov</a></li>
+	    		</ul>
+			</nav>
+			{% elsif page.path contains '_posts' %}
 			<nav>
 	    		<ul>
 	        		<li><a class="upmenu" href="/blog" name="ponuka">Späť na zoznam blogov</a></li>
 	    		</ul>
 			</nav>
+			{% endif %}
 			<h1>{{ page.title }}</h1>
 				<p class="meta">{{ page.date | date_to_string }}</p>
 
 				<div class="post">
 				  {{ content }}
 				</div>
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-				</ul>
-			</footer>
+			
 		</body>
-	</html>
+	

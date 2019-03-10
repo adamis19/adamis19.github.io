@@ -1,38 +1,20 @@
 ---
 layout: default
-title: projekty - Adam Fábry
+title: projekty
 ---
 
 <div class="blurb">
 	<h2>Tu sa nachádza prehľad mojich najzaujímavejších školských projektov.</h2>
 	
-{% for projekt in site.data.projekty %}
-  <li>
+{% assign sorted = site.data.projekty | sort: "rocnik" %}
+{% for projekt in sorted %}
+  
     <p> 
-      {{ projekt.meno }}
-	  {{ projekt.rocnik }}
-	  {{ projekt.predmet }}
-	  {{ projekt.znamka }}
-	  {{ projekt.cviciaci }}
+	  <a href = "/projekty/{{projekt.link}}" >{{ projekt.meno }}</a>
+		<p1>Predmet {{ projekt.predmet }} som absolvoval v {{ projekt.rocnik }}. ročníku, s cvičiacim {{ projekt.cviciaci }}. Podarilo sa mi získať známku
+		{{ projekt.znamka}}.</p1>
     </p>
-  </li>
+		
 {% endfor %}
 
-	<p><b> Bomberman: </b></p>
-	<p1> Túto všetobecne známu hru som vytvoril na predmete Princípy počítačovej grafiky a spracovanie obrazu. Bomberman sa pohybuje pomocou šípok,
-	medzerníkom hádže bomby, ak ho výbuch zasiahne zomrel. Ak výbuch zasiahne drevenú debnu, debna sa rozpadne a políčko je priechodné. Cieľom je dostať
-	sa do pravého horného bodu mapy.</p1>
-	
-	
-	<img src="/projekty/Screenshot.PNG" alt="Bomberman" class="center" height="400" width="400" >
-	
-	<hr>
-	
-	<p><b> Evolučný algoritmus: </b></p>
-	<p1> Tento projekt som robil na predmet Umelá inteligencia. Algoritmus poklady znázornené na obrázku zozbiera najoptimálnejším spôsobom.
-	Beží niekoľkými iteráciami a v každej iterácií vytvára nových jedincov(ciest) krížením najlepších z minulej popoulácie. Najlepších 10 jedincov
-	zostáva do ďalšej populácie.</p1>
-	
-	<img src="/projekty/Snimka.PNG" alt="Evolucak" class="center" height="400" width="400" >
-	
 </div><!-- /.blurb -->

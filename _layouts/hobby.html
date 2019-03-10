@@ -1,0 +1,13 @@
+---
+layout: default
+title: Adam Fábry
+---
+<div class="blurb">
+	<h2>Tu sa nachádza prehľad mojich najzaujímavejších školských projektov.</h2>
+	
+{% assign sorted = site.data.projekty | sort: "rocnik" %}
+{% for projekt in sorted %}
+ {{ content }} 
+{% endfor %}
+
+</div><!-- /.blurb -->

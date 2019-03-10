@@ -1,4 +1,4 @@
-meno,rocnik,predmet,znamka,cviciaci
-Bomberman,3,Princípy počítačovej grafiky a spracovania obrazu,C,Lukas Hudec
-Evolučný algoritmus,2,Umelá inteligencia,A,Andrej Jursa
-E-justice,3,Modelovanie softvéru,B,Jan Lang
+meno,rocnik,predmet,znamka,cviciaci,link
+Bomberman,3,Princípy počítačovej grafiky a spracovania obrazu,C,Lukáš Hudec,bomberman
+Evolučný algoritmus,2,Umelá inteligencia,A,Andrej Jursa,evolucak
+E-justice,3,Modelovanie softvéru,B,Ján Lang,ejustice
