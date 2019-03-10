@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Prvý zápas na novom tehelnom poli"
-date: 2019-03-04
+date: 2019-03-05
 ---
 
 Po vyše 9 rokoch sa fanúšikovia [ŠK Slovan Bratislava](http://skslovan.com) dočkali svojho štadióna. V prvom zápase sa Slovan stretol so Spartakom Trnava.
